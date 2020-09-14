@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Pet Clinic</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/tms-0.4.1.js"></script>
+<script src="js/slider.js"></script>
+<script>
+$(function(){
+	function equalHeight(group) {
+		var tallest = 0;
+		group.each(function() {
+			var thisHeight = $(this).height();
+			if(thisHeight > tallest) {
+				tallest = thisHeight;
+			}
+		});
+		group.height(tallest);
+	}	
+	equalHeight($(".box-1 .inner"));
+})
+</script>
+<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<link rel="stylesheet" href="css/ie.css"> 
+<![endif]-->
+</head>
+<body id="page1">
+<!-- Header -->
+<header>
+  <div class="inner">
+    <h1 class="logo"><a href="index.html">clinica</a></h1>
+    <div class="fright">
+      <div class="header-meta">
+        <form action="#" id="search-form" method="post">
+          <input type="text" onBlur="if(this.value==''){this.value='search'}" onFocus="if(this.value=='search'){this.value=''}" value="search" name="search">
+          <a class="search-form-submit"></a>
+        </form>
+        <div class="col-elem"> Algun problema con tu mascota?<br>
+          llamar: <span class="phone"> +569 95453366 </span> </div>
+      </div>
+      <nav>
+        <ul class="sf-menu">
+          <li class="current"><a href="index.html">Principal</a></li>
+          
+          <li> <a href="services.html">consulta</a>
+            <ul>
+              <li><a href="#">Maecenas faucibus</a></li>
+              <li><a href="#">Fusce tincidunt</a></li>
+              <li> <a href="#">tempor eros</a>
+                <ul>
+                  <li><a href="#">ut viverra</a></li>
+                  <li><a href="#">hendrerit mauris</a></li>
+                </ul>
+              </li>
+              <li><a href="#">mauris ut du</a></li>
+            </ul>
+          </li>
+          <li><a href="links.html">links</a></li>
+          <li><a href="contacts.html">contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="slider-container">
+    <div class="mp-slider">
+      <ul class="items">
+        <li><img src="images/slide1.jpg" alt=""></li>
+        <li><img src="images/slide2.jpg" alt=""></li>
+        <li><img src="images/slide3.jpg" alt=""></li>
+      </ul>
+    </div>
+  </div>
+</header>
+<!-- Content -->
+<section id="content">
+  <div class="container_24">
+    <div class="indent-bot">
+      <article class="grid_6">
+        <div class="box-1">
+          <div class="inner">
+            <h3>Microchip</h3>
+            <p> Es un pequeño dispositivo electrónico de identificación de animales que consiste en una cápsula biocompatible que puede ser implantado bajo la piel </p>
+            <div class="btn-container">
+              <div class="button-box"> <a href="#" class="button">Leer Mas...</a> </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="grid_6">
+        <div class="box-1">
+          <div class="inner">
+            <h3>Ecografia</h3>
+            <p class="p0"> <strong class="str-1">  </strong> </p>
+            <p> Examen que nos permite visualizar el aspecto estructural de los tejidos blandos a traves de emisiones acústicas con alta resolución. </p>
+            <div class="btn-container">
+              <div class="button-box"> <a href="#" class="button">Leer Mas...</a> </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="grid_6">
+        <div class="box-1">
+          <div class="inner">
+            <h3>Cardiologia</h3>
+            <p> Especialidad de trascendencia diagnostica en la atencion integral del paciente neurologico como tambien de aquellos enfermos cardiovasculares. </p>
+            <div class="btn-container">
+              <div class="button-box"> <a href="#" class="button">Leer Mas...</a> </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="grid_6">
+        <div class="box-1">
+          <div class="inner">
+            <h3>Laboratorio Clinico</h3>
+            <p class="p0"> <strong class="str-1">  </strong> </p>
+            <p>Especialidad trascendental en la confirmación de prediagnósticos de afecciones neurológicas y de la medicina interna.</p>
+            <div class="btn-container">
+              <div class="button-box"> <a href="#" class="button">Leer Mas...</a> </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <div class="clear"></div>
+    </div>
+    <div class="indent-bot-1">
+      <div class="grid_6">
+        <div class="inner-indent">
+          <h2>Nuevos Articulos:</h2>
+          <ul class="list-1">
+            <li><a href="#">Un traje que corrige las posturas de tu perro</a></li>
+            <li><a href="#">Un perro artificial para fines de prácticas veterinarias</a></li>
+            <li><a href="#">Un gadget que previene enfermedades</a></li>
+            </ul>
+        </div>
+      </div>
+      <div class="grid_6 suffix_1">
+        <div class="box-2">
+          <h2>Innovaciones:</h2>
+          <p class="p1"> <strong class="str-2"> </strong> </p>
+          <p class="p1"> La medicina veterinaria se encuentra en un rápido proceso de evolución. Cada vez aparecen más propuestas en búsqueda de mejorar la salud y buscar los tratamientos más efectivos para todo tipo de enfermedades. Conoce 3 de las innovaciones más interesante. </p>
+          <div class="alignright"> <a href="#" class="link">Leer Mas...</a> </div>
+        </div>
+      </div>
+      <div class="grid_11 indent-top">
+        <h2><span>Bienvenido</span> a la clinica!</h2>
+        <div class="wrapper">
+          <figure class="img-indent"> <img src="images/page1-img1.png" alt="" class="img-indent-bot">
+            <div class="author"> <em>Eduardo González</em></div>
+          </figure>
+          <blockquote class="quote extra-wrap">El Dr. Eduardo González, se tituló con distinción como Médico Veterinario de la Universidad Andrés Bello, el año 2011. Entre el año 2012 y 2013, aprobó satisfactoriamente el Diplomado en Medicina de Animales Pequeños, post-título otorgado por la Universidad de Chile. El 2015 realizó el curso de especialización en Neurología Veterinaria cursado en el Instituto Neurológico Veterinario. Además posee perfeccionamiento constante por medio de asistencia a seminarios, cursos y simposios tanto de medicina veterinaria como de medicina humana, centrados en el área de neurología, medicina interna y medicina de urgencias/intensiva.
+En el año 2016 se integra al equipo de trabajo del Instituto Neurológico, centrando su participación y colaboración en la atención de pacientes con alteraciones neurológicas.
+Las principales áreas de interés y de desarrollo profesional se centran en neurología de caninos y felinos, además de medicina interna de pequeños animales.
+  </blockquote>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="hr-border"></div>
+    <div class="wrapper">
+      <div class="grid_7 suffix_1">
+        <div class="wrapper hr-border-1"> <span class="dropcap">A.</span>
+          <div class="extra-wrap">
+            <dl class="def-list-1">
+              <dt> <a href="#">Rehabilitación de vida silvestre</a> </dt>
+              <dd class="extra"></dd>
+            </dl>
+          </div>
+        </div>
+        <div class="wrapper"> <span class="dropcap">B.</span>
+          <div class="extra-wrap">
+            <dl class="def-list-1">
+              <dt> <a href="#">Manejo del duelo en los niños</a> </dt>
+              <dd></dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <div class="grid_7 suffix_1">
+        <div class="wrapper hr-border-1"> <span class="dropcap">C.</span>
+          <div class="extra-wrap">
+            <dl class="def-list-1">
+              <dt> <a href="#">Servicios de cremacion para mascotas</a> </dt>
+              <dd>  
+				</dd>
+            </dl>
+          </div>
+        </div>
+        <div class="wrapper"> <span class="dropcap">D.</span>
+          <div class="extra-wrap">
+            <dl class="def-list-1">
+              <dt> <a href="#">Dónde enterrar al perro</a> </dt>
+              <dd></dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <div class="grid_7 suffix_1">
+        <div class="wrapper hr-border-1"> <span class="dropcap">E.</span>
+          <div class="extra-wrap">
+            <dl class="def-list-1">
+              <dt> <a href="#">Servicios de laboratorio de diagnóstico</a> </dt>
+              <dd> </dd>
+            </dl>
+          </div>
+        </div>
+        <div class="wrapper"> <span class="dropcap">F.</span>
+          <div class="extra-wrap">
+            <dl class="def-list-1">
+              <dt> <a href="#">Implantación de microchip</a> </dt>
+              <dd>&nbsp;</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Footer -->
+<footer>
+  <div class="copyright"> &copy; <strong class="footer-logo">Pet clinic</strong>
+    <div><a target="_blank" href=</a></div>
+  </div>
+  <ul class="social-list">
+    <li><a href="#"><img src="images/social-link-1.jpg" alt=""></a></li>
+    <li><a href="#"><img src="images/social-link-2.jpg" alt=""></a></li>
+    <li><a href="#"><img src="images/social-link-3.jpg" alt=""></a></li>
+    <li><a href="#"><img src="images/social-link-4.jpg" alt=""></a></li>
+  </ul>
+</footer>
+</body>
+</html>
